@@ -1,7 +1,7 @@
 from confluent_kafka import Consumer, KafkaError
 from k_meta_message import meta_message
 
-c = Consumer({'bootstrap.servers': 'STOP-KMORFIN.STOPLLC.COM:9092', 'group.id':'randomgroupgen', 'default.topic.config':{'auto.offset.reset':'smallest'}})
+c = Consumer({'bootstrap.servers': '***-example.com', 'group.id':'randomgroupgen', 'default.topic.config':{'auto.offset.reset':'smallest'}})
 c.subscribe(['__consumer_offsets'])
 
 print("starting consumer");
