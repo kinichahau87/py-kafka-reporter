@@ -3,7 +3,7 @@ from k_meta_message import meta_message
 from k_meta_message import meta_message
 
 class offset_consumer(self, shared_values, offset):
-	c = Consumer({'bootstrap.servers':'STOP-KMORFIN.STOPLLC.COM:9092', 'group.id': 'k_meta-group', 'default.topic.config': {'auto.offset.reset':'smallest'}})
+	c = Consumer({'bootstrap.servers':'localhost:9092', 'group.id': 'k_meta-group', 'default.topic.config': {'auto.offset.reset':'smallest'}})
 	c.subscribe(['__consumer_offsets'])
 	running = True
 
